@@ -1,0 +1,15 @@
+.b10 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.brand {
+		font-size: 0;
+		line-height: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 20px 25px 20px;
+		}
+	}
+}

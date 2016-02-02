@@ -1,0 +1,125 @@
+.b07 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: url("../img/b07_bg.jpg") 50% 0 repeat-y;
+
+	.h2 {
+
+		span {
+			padding: 0 40px;
+			position: relative;
+			display: inline-block;
+
+			&:after,
+			&:before {
+				top:50%;
+				width: 27px;
+				height: 23px;
+				content: ' ';
+				margin-top: -12px;
+				position: absolute;
+				background: url("../img/icon-star.png") 0 0 no-repeat;
+			}
+
+			&:after {
+				left: 0;
+			}
+
+			&:before {
+				right: 0;
+			}
+		}
+	}
+
+	.review {
+		text-align: center;
+
+		.review-item {
+			outline: none;
+			padding-bottom: 50px;
+		}
+
+		.review-text {
+			font-size: 16px;
+			line-height: 25px;
+			margin-bottom: 25px;
+		}
+
+		.review-author {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.slick-dots {
+			font-size: 0;
+			line-height: 0;
+			text-align: center;
+
+			li {
+				width: 18px;
+				height: 18px;
+				margin: 0 7px;
+				overflow: hidden;
+				display: inline-block;
+
+				button {
+					width: 18px;
+					height: 18px;
+					outline: none;
+					background: #fff;
+					display: inline-block;
+					border: 1px solid #7a7a7a;
+					@include border-radius(50%);
+				}
+
+				&.slick-active {
+					button {
+						background: #fdf872;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		.h2 {
+			span {
+				padding: 0 50px;
+			}
+		}
+
+		.review {
+
+			.review-item {
+				padding: 0 50px 50px 50px;
+			}
+
+			.review-text {
+				font-size: 18px;
+				line-height: 30px;
+			}
+
+			.review-author {
+				font-size: 20px;
+
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		.review {
+
+			.review-item {
+				padding: 0 90px 50px 90px;
+			}
+		}
+	}
+}

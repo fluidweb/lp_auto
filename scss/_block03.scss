@@ -1,0 +1,39 @@
+.b03 {
+	padding-top: 20px;
+	padding-bottom: 60px;
+
+	.h2 {
+		margin-bottom: 20px;
+	}
+
+	.form-block {
+		padding: 35px 20px;
+		background: #f3f5fa;
+		border: 1px solid #d0d2d0;
+		@include box-shadow(2px 2px 4px 0px rgba(181, 182, 181, 0.75));
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+
+		.form-block {
+			padding: 40px 30px;
+
+			.btn {
+				margin-top: 15px;
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+		}
+	}
+	@media (min-width: $screen-md-min) {
+
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+		.form-block {
+			padding: 60px 60px;
+		}
+	}
+}

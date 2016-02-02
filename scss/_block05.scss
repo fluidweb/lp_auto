@@ -1,0 +1,98 @@
+.b05 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #f2f2f2;
+
+	.doc {
+		width: 100%;
+		max-width: 350px;
+		display: table;
+		background: #fff;
+		margin: 0 auto 25px auto;
+		padding: 70px 0 70px 40px;
+
+		.doc-inner {
+			height: 110px;
+			font-size: 16px;
+			line-height: 20px;
+			padding-left: 105px;
+			padding-bottom: 8px;
+			display: table-cell;
+			position: relative;
+			vertical-align: middle;
+
+			&.item1 {
+				background: url("../img/b04_icon1.png") 0 50% no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b04_icon2.png") 0 50% no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b04_icon3.png") 0 50% no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b04_icon4.png") 0 50% no-repeat;
+			}
+
+			&.item5 {
+				background: url("../img/b04_icon5.png") 0 50% no-repeat;
+			}
+
+			&.item6 {
+				background: url("../img/b04_icon6.png") 0 50% no-repeat;
+			}
+
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		.h2 {
+			font-size: 32px;
+		}
+
+		.doc {
+
+			.doc-inner {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.h2 {
+			font-size: 38px;
+		}
+
+		.doc {
+			padding-left: 25px;
+
+			.doc-inner {
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+		.doc {
+			padding-left: 40px;
+
+			.doc-inner {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+}

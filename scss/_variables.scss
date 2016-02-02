@@ -15,7 +15,7 @@ $font-base              :   'Roboto', Arial, sans-serif !default;
 //== Media queries breakpoints
 
 // Extra small screen / phone
-$screen-xs-min:              80px !default;
+$screen-xs-min:              480px !default;
 
 // Small screen / tablet
 $screen-sm-min:              768px !default;
@@ -41,7 +41,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         20px !default;
+$grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min !default;

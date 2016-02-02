@@ -1,0 +1,104 @@
+.b04 {
+	padding-bottom: 50px;
+
+	.how-we-work {
+
+		li {
+			width: 100%;
+			float: left;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+			margin-bottom: 30px;
+			position: relative;
+			padding: 125px 5px 0 5px;
+
+			&.item1 {
+				background: url("../img/b03_icon1.png") 50% 0 no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b03_icon2.png") 50% 0 no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b03_icon3.png") 50% 0 no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b03_icon4.png") 50% 0 no-repeat;
+			}
+		}
+	}
+
+	@media (min-width: $screen-xs-min) {
+
+		.how-we-work {
+
+			li {
+				width: 50%;
+			}
+		}
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+		padding-top: 50px;
+		padding-bottom: 80px;
+
+		.how-we-work {
+
+			li {
+				width: 50%;
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.how-we-work {
+
+			li {
+				width: 25%;
+
+				&:before {
+					top: 46px;
+					right: -50px;
+					content: '';
+					width: 100px;
+					height: 13px;
+					position: absolute;
+					background: url("../img/b03_arrow.png") 100% 0 no-repeat;
+				}
+
+				&:last-child {
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+		.how-we-work {
+
+			li {
+
+				&:before {
+					right: -75px;
+					content: '';
+					width: 150px;
+					height: 13px;
+					position: absolute;
+					background: url("../img/b03_arrow.png") 100% 0 no-repeat;
+				}
+
+			}
+		}
+	}
+}

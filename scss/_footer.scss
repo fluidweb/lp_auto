@@ -1,0 +1,43 @@
+.footer {
+	padding: 20px 0;
+	background: #f7f8fc;
+
+
+	.footer-logo {
+		width: 100px;
+		margin: 0 auto 25px auto;
+	}
+
+	.footer-phone {
+		padding: 15px 0;
+		text-align: center;
+
+		li {
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 28px;
+
+			a {
+				color: #484747;
+				padding-left: 28px;
+				text-decoration: none;
+				background: url("../img/icon-tel.png") 0 50% no-repeat;
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+		padding: 25px 0;
+
+		.footer-logo {
+			width: 150px;
+			float: left;
+			margin: 0;
+		}
+
+		.footer-phone {
+			float: right;
+			text-align: right;
+		}
+	}
+}
