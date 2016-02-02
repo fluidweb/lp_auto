@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" autoUpload="Always" serverName="avto724ru" autoUploadExternalChanges="true">
     <serverData>
       <paths name="109.120.162.1">
         <serverdata>
@@ -79,6 +79,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="avto724ru">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/assets/template" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="bdyapp">
         <serverdata>
           <mappings>
@@ -87,6 +94,13 @@
         </serverdata>
       </paths>
       <paths name="boyard">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="brigada154_zephyrus">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -437,5 +451,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

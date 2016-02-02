@@ -1070,19 +1070,43 @@ ul {
       color: transparent; }
     .form-control:focus::-webkit-input-placeholder {
       color: transparent; }
-
-.red .form-control {
-  border-color: #ff0000; }
-  .red .form-control.invert {
+  .form-control.error {
     border-color: #ff0000; }
 
-label {
-  padding: 10px 0;
-  font-weight: 400;
-  display: block;
-  font-size: 14px;
-  line-height: 20px;
-  vertical-align: middle; }
+#inputFile {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative; }
+  #inputFile .fileformlabel {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 50px;
+    display: block;
+    position: absolute; }
+    #inputFile .fileformlabel:hover {
+      color: #fff; }
+  #inputFile .upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 100%;
+    z-index: 20;
+    display: block;
+    cursor: pointer !important; }
 
 .form-group {
   margin-bottom: 20px; }
@@ -1521,6 +1545,7 @@ label {
   @media (min-width: 768px) {
     .b01 {
       height: 654px;
+      overflow: hidden;
       background-position: 50% 0; }
       .b01 .b01-top {
         top: 0;

@@ -1,3 +1,4 @@
+
 .form-control {
 	margin: 0;
 	width: 100%;
@@ -22,29 +23,55 @@
 		border-color: #b3b3b3;
 		@include placeholder(transparent);
 	}
+
+	&.error {
+		border-color: #ff0000;
+	}
 }
 
-.red {
+#inputFile {
+	width: 100%;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
 
-	.form-control {
-		border-color: #ff0000;
+	.fileformlabel {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		color: #000;
+		z-index: 100;
+		cursor: pointer;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		padding-top: 50px;
+		display: block;
+		position: absolute;
 
-		&.invert {
-			border-color: #ff0000;
+		&:hover {
+			color: #fff;
 		}
+	}
+
+	.upload {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		-moz-opacity: 0;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		font-size: 150px;
+		height: 100%;
+		z-index:20;
+		display: block;
+		cursor: pointer !important;
 	}
 }
 
 
-
-label {
-	padding: 10px 0;
-	font-weight: 400;
-	display: block;
-	font-size: 14px;
-	line-height: 20px;
-	vertical-align: middle;
-}
 
 .form-group {
 	margin-bottom: 20px;
