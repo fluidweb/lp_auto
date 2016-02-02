@@ -1,0 +1,9 @@
+.b02 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media (min-width: $screen-sm-min) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}

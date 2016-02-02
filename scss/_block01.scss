@@ -1,0 +1,296 @@
+.header {
+	background: #fff;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #696969;
+
+	.logo {
+		width: 166px;
+		margin: 0 auto 15px auto;
+	}
+
+	.slogan {
+		color: #696969;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.header-phone {
+		padding: 15px 0;
+		text-align: center;
+
+		li {
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 28px;
+
+			a {
+				color: #484747;
+				padding-left: 28px;
+				text-decoration: none;
+				background: url("../img/icon-tel.png") 0 50% no-repeat;
+			}
+		}
+	}
+
+	.header-button {
+		text-align: center;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		padding-bottom: 20px;
+
+		.logo {
+			float: left;
+			margin: 0;
+		}
+
+		.slogan {
+			width: 265px;
+			text-align: left;
+			margin-left: 180px;
+			padding-top: 20px;
+		}
+
+		.header-phone {
+			float: left;
+			padding: 5px 0;
+			text-align: right;
+		}
+
+		.header-button {
+			float: right;
+			padding-top: 7px;
+			text-align: right;
+		}
+	}
+	@media (min-width: $screen-md-min) {
+		border-bottom: none;
+
+		.header-phone {
+			margin-left: 10px;
+		}
+	}
+	@media (min-width: $screen-lg-min) {
+
+		.header-phone {
+			margin-left: 80px;
+		}
+
+	}
+}
+
+.b01 {
+	height: 590px;
+	position: relative;
+	padding-bottom: 50px;
+	background: url("../img/slide01.jpg") -100px 0 no-repeat;
+
+	.header-content {
+		z-index: 400;
+	}
+
+	.form-box {
+		z-index: 500;
+		max-width: 460px;
+		background: #f7fbfc;
+		padding: 50px 25px;
+		margin: 50px auto 0 auto;
+		border: 1px solid #c5cbc8;
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	.slider {
+		display: none;
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+		height: 654px;
+		background-position: 50% 0;
+
+		.b01-top {
+			top: 0;
+			left: 0;
+			right: 0;
+			position: absolute;
+		}
+
+		.form-box {
+			margin: 0;
+			left: 10px;
+			width: 340px;
+			margin-top: 50px;
+			max-width: inherit;
+			padding: 50px 35px;
+			position: absolute;
+		}
+
+		.slider-nav {
+			z-index: 200;
+			top: 510px;
+			width: 30px;
+			height: 79px;
+			display: block;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/slide-navigation.png") no-repeat;
+
+			&.prev {
+				right: 90px;
+				background-position: 0 0;
+			}
+
+			&.next {
+				right: 30px;
+				background-position: -30px 0;
+			}
+		}
+
+		.slider {
+			width: 100%;
+			height: 654px;
+			display: block;
+			position: relative;
+
+			.container {
+				height: 654px;
+			}
+
+			.slider-item {
+				width: 100%;
+				height: 654px;
+				padding-top: 50px;
+				position: relative;
+
+				&.item1 {
+					background: url("../img/slide01.jpg") 50% 0 no-repeat;
+				}
+
+				&.item2 {
+					background: url("../img/slide02.jpg") 50% 0 no-repeat;
+				}
+
+				&.item3 {
+					background: url("../img/slide03.jpg") 50% 0 no-repeat;
+				}
+
+				&.item4 {
+					background: url("../img/slide04.jpg") 50% 0 no-repeat;
+				}
+
+			}
+
+			.slider-text {
+				color: #fff;
+				width: 340px;
+				float: right;
+				padding: 5px 20px;
+				font-weight: 700;
+				text-align: center;
+				background: rgba(72,71,71, 0.5);
+
+				.text-one {
+					font-size: 30px;
+					line-height: 30px;
+					text-transform: uppercase;
+				}
+
+				.text-two {
+					font-size: 38px;
+					line-height: 38px;
+					text-transform: uppercase;
+				}
+
+				.text-three {
+					font-size: 26px;
+					line-height: 30px;
+
+					span {
+						color: #ff3232;
+						font-size: 30px;
+						font-weight: 900;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.form-box {
+			width: 400px;
+		}
+
+		.slider {
+
+			.slider-text {
+				width: 420px;
+				float: right;
+				padding: 5px 20px;
+
+				.text-one {
+					font-size: 40px;
+					line-height: 40px;
+				}
+
+				.text-two {
+					font-size: 44px;
+					line-height: 44px;
+				}
+
+				.text-three {
+					font-size: 36px;
+					line-height: 40px;
+
+					span {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+	}
+
+
+	@media (min-width: $screen-lg-min) {
+
+		.form-box {
+			width: 460px;
+		}
+
+		.slider {
+
+			.slider-text {
+				width: 460px;
+
+				.text-one {
+					font-size: 44px;
+					line-height: 44px;
+				}
+
+				.text-two {
+					font-size: 54px;
+					line-height: 54px;
+				}
+
+				.text-three {
+					font-size: 42px;
+					line-height: 44px;
+
+					span {
+						color: #ff3232;
+						font-size: 44px;
+						font-weight: 900;
+					}
+				}
+			}
+		}
+
+	}
+}

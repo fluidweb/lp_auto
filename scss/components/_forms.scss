@@ -1,0 +1,51 @@
+.form-control {
+	margin: 0;
+	width: 100%;
+	outline: none;
+	color: #484747;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 20px;
+	padding: 10px 15px;
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #d8d8d8;
+	@include placeholder(#484747);
+
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	&:focus {
+		border-color: #b3b3b3;
+		@include placeholder(transparent);
+	}
+}
+
+.red {
+
+	.form-control {
+		border-color: #ff0000;
+
+		&.invert {
+			border-color: #ff0000;
+		}
+	}
+}
+
+
+
+label {
+	padding: 10px 0;
+	font-weight: 400;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
