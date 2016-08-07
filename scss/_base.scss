@@ -181,3 +181,25 @@ ul {
 	position: absolute;
 	background: url("../img/icon-close.png") 0 0 no-repeat;
 }
+
+
+.thanks {
+	color: #2b2b2b;
+	width: 280px;
+	height: 354px;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 200px;
+	background: url("../img/thanks.jpg") 50% 0 no-repeat;
+
+	.item-title {
+		color: #2b2b2b;
+		text-align: center;
+		padding-bottom: 20px;
+		font: 30px/40px;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		width: 360px;
+	}
+}
